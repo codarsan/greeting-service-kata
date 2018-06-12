@@ -3,13 +3,18 @@ package com.orange.service;
 import com.orange.customers.CustomerRespository;
 import com.orange.notification.Mailer;
 
-public class GreetingService {
+class GreetingService {
 
     private CustomerRespository repository;
 
     private Mailer mailer;
 
-    public void greeting(String name) {
+    GreetingService(CustomerRespository repository, Mailer mailer) {
+        this.repository = repository;
+        this.mailer = mailer;
+    }
+
+    void greeting(String name) {
         String greeting;
 
         if (repository.birthdayIsToday(name)) {
