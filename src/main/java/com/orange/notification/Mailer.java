@@ -1,7 +1,7 @@
 package com.orange.notification;
 
 public class Mailer {
-    public void send(String greeting) {
+  public void send(String greeting) {
 
-    }
+  }
 }
