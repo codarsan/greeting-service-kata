@@ -1,3 +1,11 @@
+# Exercice
+Implement a greeting method in GreetingService.java
+which will do the following:
+- Send a 'Good Morning' email to the employee
+whose name is passed as parameter.
+- Send a 'Happy Birthday' email instead if when calling the repository,
+it turns out to be the employee's birthday.
+
 # Goals
 
 The goal of this exercise is to come up with a solution that is
